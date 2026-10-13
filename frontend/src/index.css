@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100 font-sans min-h-screen overflow-x-hidden;
+  }
+}
+
+/* Custom Glassmorphism & Micro-animations */
+.glass-panel {
+  @apply bg-slate-900/70 backdrop-blur-md border border-slate-800/80 shadow-xl rounded-xl;
+}
+
+.glass-card {
+  @apply bg-slate-900/50 backdrop-blur-sm border border-slate-800/60 rounded-xl transition-all duration-300 hover:border-slate-700 hover:shadow-cyan-900/10 hover:shadow-lg;
+}
+
+.pulse-critical {
+  animation: pulse-red 1.5s infinite;
+}
+
+@keyframes pulse-red {
+  0% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(239, 68, 68, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}

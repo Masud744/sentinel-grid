@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "author": "Antigravity SCS-RG Architect",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-flame-sensor",
+      "id": "flame",
+      "top": -160,
+      "left": 220,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gas-sensor",
+      "id": "mq2",
+      "top": -20,
+      "left": 250,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "water",
+      "top": 130,
+      "left": 250,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pir-motion-sensor",
+      "id": "pir",
+      "top": 280,
+      "left": 220,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "buzzer",
+      "top": -140,
+      "left": -180,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_red",
+      "top": -30,
+      "left": -180,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_yel",
+      "top": 20,
+      "left": -180,
+      "attrs": {
+        "color": "yellow"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_grn",
+      "top": 70,
+      "left": -180,
+      "attrs": {
+        "color": "green"
+      }
+    },
+    {
+      "type": "wokwi-relay-module",
+      "id": "relay",
+      "top": 180,
+      "left": -180,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    ["esp:TX", "$serialMonitor:RX", "", []],
+    ["esp:RX", "$serialMonitor:TX", "", []],
+
+    ["esp:3V3", "flame:VCC", "red", []],
+    ["esp:GND.1", "flame:GND", "black", []],
+    ["esp:34", "flame:OUT", "green", []],
+
+    ["esp:3V3", "mq2:VCC", "red", []],
+    ["esp:GND.2", "mq2:GND", "black", []],
+    ["esp:35", "mq2:A0", "green", []],
+
+    ["esp:3V3", "water:VCC", "red", []],
+    ["esp:GND.3", "water:GND", "black", []],
+    ["esp:33", "water:SIG", "orange", []],
+
+    ["esp:5V", "pir:VCC", "red", []],
+    ["esp:GND.4", "pir:GND", "black", []],
+    ["esp:13", "pir:OUT", "green", []],
+
+    ["esp:25", "buzzer:1", "red", []],
+    ["esp:GND.5", "buzzer:2", "black", []],
+
+    ["esp:26", "led_red:A", "red", []],
+    ["led_red:C", "esp:GND.6", "black", []],
+
+    ["esp:27", "led_yel:A", "yellow", []],
+    ["led_yel:C", "esp:GND.7", "black", []],
+
+    ["esp:14", "led_grn:A", "green", []],
+    ["led_grn:C", "esp:GND.8", "black", []],
+
+    ["esp:5V", "relay:VCC", "red", []],
+    ["esp:GND.9", "relay:GND", "black", []],
+    ["esp:32", "relay:IN", "blue", []]
+  ],
+  "dependencies": {}
+}
