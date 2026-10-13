@@ -7,11 +7,13 @@
 ![SQLite](https://img.shields.io/badge/Database-Async_SQLite_|_SQLAlchemy_2.0-003B57?style=for-the-badge&logo=sqlite)
 ![ESP32](https://img.shields.io/badge/IoT-ESP32_|_Wokwi_Simulation-E7352C?style=for-the-badge&logo=espressif)
 ![Cloudflare](https://img.shields.io/badge/Tunnel-Cloudflare_Quick_Tunnel-F38020?style=for-the-badge&logo=cloudflare)
+![Competition](https://img.shields.io/badge/Competition-Robo_Fusion_1.0_|_Techathon_Round_1-7928CA?style=for-the-badge)
+
 ---
 
 ## Executive Summary
 
-**SentinelGrid (SCS-RG)** is an end-to-end, enterprise-grade **Smart Campus Safety & Automated Response Grid**. It bridges physical IoT edge nodes (ESP32 microcontrollers simulating complex multi-hazard environments) with a high-performance **asynchronous FastAPI backend**, an intelligent **Multi-Hazard Risk Fusion Engine**, deterministic **Closed-Loop Actuation Logic**, live **WebSocket telemetry feeds**, and an interactive **React + TypeScript Operational Command Dashboard**.
+**SentinelGrid (SCS-RG)** is an end-to-end, enterprise-grade **Smart Campus Safety & Automated Response Grid** developed for **Robo Fusion 1.0: Techathon (Round 1)**. It bridges physical IoT edge nodes (ESP32 microcontrollers simulating complex multi-hazard environments) with a high-performance **asynchronous FastAPI backend**, an intelligent **Multi-Hazard Risk Fusion Engine**, deterministic **Closed-Loop Actuation Logic**, live **WebSocket telemetry feeds**, and an interactive **React + TypeScript Operational Command Dashboard**.
 
 Whether monitoring chemical laboratories, high-density server rooms, or robotics facilities, SentinelGrid detects environmental hazards in real time, computes dynamic multi-factor risk scores, triggers immediate hardware-level safety countermeasures (buzzers, tri-color status LEDs, power cutoff relays), and prioritizes emergencies in an automated campus queue for dispatch responders.
 
@@ -381,6 +383,12 @@ npx tsc --noEmit
 
 ---
 
+## Competition Background
+
+This project was conceptualized, architected, and built for **Robo Fusion 1.0 — Techathon (Round 1)**. The objective was to design a robust, resilient smart campus safety grid addressing multi-hazard emergencies (fire, toxic/combustible gas leaks, water logging/flooding) with real-time edge telemetry, server-side risk fusion, closed-loop hardware actuation, and an intuitive command interface for campus responders.
+
+---
+
 ## License
 
 Distributed under the MIT License. See `LICENSE` for details.
@@ -388,5 +396,6 @@ Distributed under the MIT License. See `LICENSE` for details.
 ---
 
 <p align="center">
-  <b>SentinelGrid: Smart Campus Safety & Response Grid</b> — Developed for Next-Generation Connected Smart Campuses.
+  <b>SentinelGrid: Smart Campus Safety & Response Grid</b> — Developed for Robo Fusion 1.0: Techathon (Round 1).
 </p>
+
