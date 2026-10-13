@@ -7,9 +7,6 @@
 ![SQLite](https://img.shields.io/badge/Database-Async_SQLite_|_SQLAlchemy_2.0-003B57?style=for-the-badge&logo=sqlite)
 ![ESP32](https://img.shields.io/badge/IoT-ESP32_|_Wokwi_Simulation-E7352C?style=for-the-badge&logo=espressif)
 ![Cloudflare](https://img.shields.io/badge/Tunnel-Cloudflare_Quick_Tunnel-F38020?style=for-the-badge&logo=cloudflare)
-
-Repository: [https://github.com/Masud744/sentinel-grid](https://github.com/Masud744/sentinel-grid)
-
 ---
 
 ## Executive Summary
